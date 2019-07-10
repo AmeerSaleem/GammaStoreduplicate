@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/flash_sale_card"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:color/transparent"
+        android:orientation="vertical">
+
+<!--<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:id="@+id/flash_sale_shimmer"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/transparent"-->
+    <!--&gt;-->
+
+
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:mlns="http://schemas.android.com/tools"
+        android:id="@+id/linear_first_image"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="10dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        mlns:app="http://schemas.android.com/apk/res-auto">
+        android:background="@color/white_color"
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/flash_sale_product_image"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@android:color/transparent"
+            android:scaleType="centerCrop"
+            android:src="@color/placeholder_grey"
+            app:sriv_left_bottom_corner_radius="0dp"
+            app:sriv_left_top_corner_radius="20dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_right_top_corner_radius="20dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="165dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/flash_sale_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="                               "
+                android:background="@drawable/curved_view_basic"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/flash_sale_prev_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="               "
+                android:textColor="#a9a9a9"
+                android:background="@drawable/curved_view_basic"
+                android:textSize="13dp" />
+
+            <TextView
+                android:id="@+id/flash_sale_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="             "
+                android:textColor="@color/themeColor"
+                android:background="@drawable/curved_view_basic"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RatingBar
+                    android:id="@+id/flash_sale_rating_bar"
+                    style="?attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:numStars="5"
+                    android:rating="0"
+                    android:background="@drawable/curved_view_basic"
+                    android:stepSize="0.1"
+                    android:theme="@style/RatingBar" />
+
+                <TextView
+                    android:id="@+id/flash_sale_review_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center_vertical"
+                    android:text=""
+                    android:textSize="11dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_location_on_black_24dp" />
+
+                <TextView
+                    android:id="@+id/flash_sale_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:background="@drawable/curved_view_basic"
+                    android:text="                       " />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/flash_sale_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="11dp"
+                android:text="                     "
+                android:background="@drawable/curved_view_basic"
+                android:textColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:weightSum="30">
+
+                <View
+                    android:id="@+id/flash_sale_available_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="20"
+                    android:background="@drawable/curved_view_basic"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="14dp" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+<!--</com.facebook.shimmer.ShimmerFrameLayout>-->

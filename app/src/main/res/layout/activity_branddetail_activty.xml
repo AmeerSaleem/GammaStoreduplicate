@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:animateLayoutChanges="true"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="false"
+    tools:context=".BRANDDetailActivty">
+    <!--android:layout_marginTop="-400dp"-->
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trend_gradient_theme_final_chrome_intro"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/curved_view_grey_border"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:fontFamily="@font/ageopersonaluse"
+                android:lineSpacingExtra="3dp"
+                android:text="@string/lorem_ipsum_text"
+                android:textColor="#393939"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/brand_detail_message"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/curved_view_theme"
+                android:fontFamily="@font/ageopersonaluse"
+                android:text="@string/message"
+                android:textColor="@color/white_color"
+                android:textSize="17dp" />
+
+            <Button
+                android:id="@+id/brand_detail_notifications"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/curved_view_soft_theme"
+                android:fontFamily="@font/ageopersonaluse"
+                android:text="@string/notifications"
+                android:textColor="@color/white_color"
+                android:textSize="17dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/curved_view_grey_border"
+                android:elevation="5dp"
+
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/sort_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:text="@string/sort"
+                        android:textColor="#393939"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="#33d3d3d3" />
+
+                <LinearLayout
+                    android:id="@+id/refine_view"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:text="@string/refine"
+                        android:textColor="#393939"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_brand_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp" />
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trend_gradient_theme_final_chrome_intro"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="left|center_vertical"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarTitleCollapsed"
+            app:contentScrim="@color/white_color"
+            app:expandedTitleGravity="center_horizontal|bottom"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleExpanded"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:title="@string/nike_sport_caps">
+
+            android:layout_gravity="center_horizontal"
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_view_target1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:transitionName="card12"
+                    app:cardCornerRadius="0dp"
+                    android:elevation="25dp"
+                    android:background="#d3d3d3"
+                    app:cardPreventCornerOverlap="true"
+                    app:cardUseCompatPadding="false"
+                    >
+                    android:background="@android:color/transparent"
+                    app:cardCornerRadius="20dp"
+
+
+
+            <ImageView
+                android:id="@+id/collapsing_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:transitionName="nike_transition"
+                android:scaleType="centerCrop"
+                android:background="@drawable/nike_brand"
+                />
+                <!--android:fitsSystemWindows="true"-->
+                <!--app:layout_collapseMode="pin"-->
+                <!--app:layout_collapseParallaxMultiplier="0.6" -->
+                <!---->
+                android:src="@drawable/trend_gradient_white_more"
+
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/collapsing_imageb"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="centerCrop"
+                    android:background="@drawable/trend_gradient_white_more"
+                    app:layout_collapseMode="pin"
+                    app:layout_collapseParallaxMultiplier="0.6" />
+                </android.support.v7.widget.CardView>
+            </FrameLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_for_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center_vertical"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_collapseMode="pin"
+                app:titleMarginEnd="0dp"
+                app:titleMarginStart="-280dp">
+
+                <ImageView
+                    android:id="@+id/brand_details_back_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/ic_arrow_back_theme_24dp" />
+
+                <!--<ImageView-->
+                <!--android:layout_width="45dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_shopping_cart_theme_24dp"-->
+                <!--/>-->
+
+            </android.support.v7.widget.Toolbar>
+            <!--android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"-->
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gammastoreduplicate">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="GammA"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BRANDDetailWorkingActivity"></activity>
+        <activity android:name=".ProfileEditActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".DeliveryActivity" />
+        <activity android:name=".ChatActivity" />
+        <activity android:name=".AboutAppActivity" />
+        <activity android:name=".LanguageActivity" />
+        <activity android:name=".TransactionsDetailsActivity" />
+        <activity android:name=".CardDetailsActivity" />
+        <activity android:name=".LoginInputActivity" />
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".LoginIntroActivity" />
+        <activity android:name=".IntroSequenceActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".NotificationsActivity" />
+        <activity android:name=".BRANDDetailActivty" />
+        <activity android:name=".ProductDETAILsActivity" />
+        <activity android:name=".CategoryActivity" />
+        <activity android:name=".FlashSaleActivity" />
+        <activity android:name=".PromotionActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

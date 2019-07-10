@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <!--<color name="themeColor">#1faf10</color>-->
+    <color name="themeColor">#00574B</color>
+    <color name="lightThemeColor">#00a74b</color>
+
+    <color name="darkThemColor">#1f5f10</color>
+
+    <color name="guillotine_background">#444153</color>
+    <color name="guillotine_background_dark">#383547</color>
+    <color name="selected_item_color">#30d1d5</color>
+
+    <color name="white_color">#FFFFFF</color>
+    <color name="placeholder_grey">#dadada</color>
+    <color name="faded_grey">#33a9a9a9</color>
+    <color name="black">#000000</color>
+    <color name="faded_theme">#11118f4f</color>
+    <color name="transparent">#00118f4f</color>
+
+    <color name="faded_theme_light_hex">#F5FFFA</color>
+    <color name="dimmer">#55000000</color>
+
+
+</resources>

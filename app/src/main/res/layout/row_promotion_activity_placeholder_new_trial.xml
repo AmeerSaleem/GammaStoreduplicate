@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/promotion_activity_card_grey"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:orientation="horizontal"
+    android:weightSum="2">
+    <!--android:background="@android:color/transparent"-->
+
+    <!--First Card-->
+    <LinearLayout
+        android:id="@+id/promotion_activity_first_card_grey"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:background="#ffffff"
+        android:layout_marginRight="5dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:mlns="http://schemas.android.com/tools"
+                android:background="#ffffff"
+                android:backgroundTint="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                >
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/promotion_activity_product_image_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="#ffffff"
+                    android:scaleType="centerCrop"
+                    app:sriv_left_bottom_corner_radius="0dp"
+                    app:sriv_left_top_corner_radius="10dp"
+                    app:sriv_right_bottom_corner_radius="0dp"
+                    app:sriv_right_top_corner_radius="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:layout_marginRight="15dp"
+                    android:background="#ffffff"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/promotion_activity_product_name_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:background="@color/placeholder_grey"
+                        android:ellipsize="end"
+                        android:text="HP laptop Pro 13 with Touch Bar"
+                        android:textColor="@color/placeholder_grey" />
+
+
+                    <TextView
+                        android:id="@+id/promotion_activity_cost_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="$ 2020"
+                        android:background="@color/placeholder_grey"
+                        android:textColor="@color/placeholder_grey"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/promotion_activity_review_count_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@color/placeholder_grey"
+                            android:layout_marginRight="1dp"
+                            android:gravity="center_vertical"
+                            android:text="4.8"
+                            android:textColor="@color/placeholder_grey"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:id="@+id/promotion_activity_rating_bar_grey"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_grey_24dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="3.6dp"
+
+                            />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="end"
+                            >
+
+
+                            <TextView
+                                android:id="@+id/promotion_activity_items_sold_grey"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:gravity="bottom"
+                                android:background="@color/placeholder_grey"
+                                android:textColor="@color/placeholder_grey"
+                                android:text="932 items sold"
+                                android:textSize="11dp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/discount_box_grey"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/promotional_activity_discount_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_gravity="center|center_vertical"
+                    android:text="10%"
+                    android:textSize="16dp"
+                    android:textColor="@color/placeholder_grey" />
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+
+    <!--Second Card-->
+    <LinearLayout
+        android:id="@+id/promotion_activity_second_card_grey"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:elevation="3dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:mlns="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:background="#ffffff"
+                android:elevation="4dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                mlns:app="http://schemas.android.com/apk/res-auto"
+                >
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/promotion_activity_product_image2_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="#ffffff"
+                    android:scaleType="centerCrop"
+                    app:sriv_left_bottom_corner_radius="0dp"
+                    app:sriv_left_top_corner_radius="10dp"
+                    app:sriv_right_bottom_corner_radius="0dp"
+                    app:sriv_right_top_corner_radius="10dp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:background="#ffffff"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/promotion_activity_product_name2_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:background="@color/placeholder_grey"
+                        android:ellipsize="end"
+                        android:text="HP laptop Pro 13 with Touch Bar"
+                        android:textColor="@color/placeholder_grey" />
+
+
+                    <TextView
+                        android:id="@+id/promotion_activity_cost2_grey"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:background="@color/placeholder_grey"
+                        android:text="$ 2020"
+                        android:textColor="@color/placeholder_grey"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/promotion_activity_review_count2_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@color/placeholder_grey"
+                            android:gravity="center_vertical"
+                            android:text="4.8"
+                            android:textColor="@color/placeholder_grey"
+                            android:textSize="11dp" />
+
+                        <ImageView
+                            android:id="@+id/promotion_activity_rating_bar2_grey"
+                            android:layout_width="18dp"
+                            android:layout_height="18dp"
+                            android:src="@drawable/ic_star_grey_24dp"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="3.6dp"
+
+                            />
+
+                        <LinearLayout
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="end"
+                        >
+
+
+                        <TextView
+                            android:id="@+id/promotion_activity_items_sold2_grey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:gravity="bottom"
+                            android:background="@color/placeholder_grey"
+                            android:text="932 items sold"
+                            android:textColor="@color/placeholder_grey"
+                            android:textSize="11dp" />
+                    </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/discount_box_grey"
+                android:elevation="8dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/promotional_activity_discount2_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="center"
+                    android:layout_gravity="center|center_vertical"
+                    android:text="10%"
+                    android:textSize="16dp"
+                    android:textColor="@color/placeholder_grey" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

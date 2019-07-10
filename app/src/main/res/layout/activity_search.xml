@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:focusableInTouchMode="true"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+
+                android:id="@+id/layout_top"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/search_filter_back_arrow"
+                        android:layout_width="20dp"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="2dp"
+                        android:src="@drawable/ic_arrow_back_theme_24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintHorizontal_bias="0.02"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/search"
+                        android:textSize="18dp"
+                        android:fontFamily="@font/ageopersonaluse"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        />
+
+                </android.support.constraint.ConstraintLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/trend_gradient_theme_final_chrome_intro"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="280dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="@string/hello_i_am_gamma_what_would_you_like_to_search"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:textColor="#000"
+                                android:textSize="25dp" />
+
+                            <android.support.v7.widget.SearchView
+                                android:layout_marginTop="15dp"
+                                android:layout_width="match_parent"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                app:queryHint="@string/enter_search"
+                                app:iconifiedByDefault="false"
+                                app:searchIcon="@drawable/ic_search_theme_24dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/curved_view_flat_white_body"
+                                android:elevation="2dp"
+                                >
+
+
+                            </android.support.v7.widget.SearchView>
+
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/toggle_group_1_tab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="@string/product_categories"
+                                android:textColor="#000"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/arrow1"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+                        </LinearLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/tab_button1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:el_duration="500"
+                            app:el_expanded="true">
+
+                            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                                android:id="@+id/toggle_group_1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                app:tbgChildSpacingForLastRow="align"
+                                app:tbgFlow="true"
+                                app:tbgRowSpacing="8dp">
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/men_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/men_fashion"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/women_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/women_fashion"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/tshirts_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/mobile_phones"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/shirts_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/computer"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/jackets_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/sports"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/jeans_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/kids_fashion"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/clothing_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/health"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/dresses_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/makeup"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/bags_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/bags"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/hoodies_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/hoodies"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/music_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/horizontal_circle_music"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/posters_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/horizontal_circle_posters"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/blazers_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/blazers"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+                                <!--<com.nex3z.togglebuttongroup.button.LabelToggle-->
+                                    <!--android:id="@+id/singles_label"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="5dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="5dp"-->
+                                    <!--android:text="@string/horizontal_circle_singles"-->
+                                    <!--app:tbgMarkerColor="#cf0404" />-->
+
+
+                            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                        <LinearLayout
+                            android:id="@+id/toggle_group_2_tab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:background="?attr/selectableItemBackground"
+                            android:clickable="true"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="@string/popular_keywords"
+                                android:textColor="#000"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:textSize="15dp" />
+
+                            <ImageView
+                                android:id="@+id/arrow2"
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_marginLeft="3dp"
+                                android:layout_marginTop="2dp"
+                                android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+
+                        </LinearLayout>
+
+                        <net.cachapa.expandablelayout.ExpandableLayout
+                            android:id="@+id/tab_button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:el_duration="500"
+                            app:el_expanded="true">
+
+                            <com.nex3z.togglebuttongroup.SingleSelectToggleGroup
+                                android:id="@+id/toggle_group_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="15dp"
+                                app:tbgChildSpacingForLastRow="align"
+                                app:tbgFlow="true"
+                                app:tbgRowSpacing="8dp">
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/white_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/shirts"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/gray_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/shoes"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/feature_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/blouse"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/black_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/samsung"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/ripped_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/apple"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/mac_book_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/macbook"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+                                <com.nex3z.togglebuttongroup.button.LabelToggle
+                                    android:id="@+id/note_9_label"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="5dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="5dp"
+                                    android:text="@string/note_9"
+                                    app:tbgMarkerColor="@color/themeColor" />
+
+
+                            </com.nex3z.togglebuttongroup.SingleSelectToggleGroup>
+
+                        </net.cachapa.expandablelayout.ExpandableLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/price_change"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:text="$ 15"
+                                android:textColor="@color/themeColor"
+                                android:textSize="15dp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="right">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="25dp"
+                                    android:text="$ 3999"
+                                    android:textSize="15dp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <org.adw.library.widgets.discreteseekbar.DiscreteSeekBar
+                            android:id="@+id/filter_search_seekbar"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginRight="15dp"
+                            app:dsb_indicatorColor="@color/themeColor"
+                            app:dsb_max="3999"
+                            app:dsb_min="15"
+                            app:dsb_progressColor="@color/themeColor" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                        <Button
+                            android:id="@+id/filter_button"
+                            android:layout_width="140dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="25dp"
+                            android:background="@drawable/themecolor_round"
+                            android:text="@string/filter"
+                            android:textColor="#fff" />
+
+                        <Button
+                            android:id="@+id/clear_filter_button"
+                            android:layout_width="140dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="25dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/themecolor_round"
+                            android:text="@string/clear_filter"
+                            android:textColor="#ffffff" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </ScrollView>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

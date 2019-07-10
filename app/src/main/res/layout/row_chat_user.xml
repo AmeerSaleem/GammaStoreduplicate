@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <TextView
+        android:id="@+id/text_message_body1"
+        android:text="hello, hello!"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/curved_view_chat_bubble_user"
+        android:maxWidth="240dp"
+        android:padding="5dp"
+        android:textColor="@color/white_color"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/ageopersonaluse"
+        />
+
+    <TextView
+        android:id="@+id/text_message_time1"
+        android:text="11:40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        app:layout_constraintRight_toLeftOf="@id/text_message_body1"
+        android:layout_marginRight="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/text_message_body1"
+        />
+
+</android.support.constraint.ConstraintLayout>

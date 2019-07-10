@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:mlns="http://schemas.android.com/tools"
+    android:id="@+id/flash_sale_card"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="7dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:weightSum="3">
+
+
+    <!--First Card-->
+    <LinearLayout
+        android:id="@+id/recommended_3_column_first_card1"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1">
+
+        <!--this used to be shimmer1-->
+        <LinearLayout
+            android:id="@+id/recommended3_shimmer1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:mlns="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="4dp"
+                android:paddingBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                mlns:app="http://schemas.android.com/apk/res-auto">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/recommended_card_view_under_image1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                mlns:app="http://schemas.android.com/apk/res-auto">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/recommended_3_column_product_image1"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/product_image_laptop"
+                    app:sriv_left_bottom_corner_radius="0dp"
+                    app:sriv_left_top_corner_radius="10dp"
+                    app:sriv_right_bottom_corner_radius="0dp"
+                    app:sriv_right_top_corner_radius="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recommended_3_column_product_name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@drawable/curved_view_basic"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="                             "
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/recommended_3_column_cost1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/curved_view_basic"
+                        android:text="            "
+                        android:textColor="@color/themeColor"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/recommended_3_column_review_count1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/curved_view_basic"
+                            android:gravity="center_vertical"
+                            android:text="    "
+                            android:textSize="11dp" />
+
+                        <RatingBar
+                            android:id="@+id/recommended_3_column_rating_bar1"
+                            style="?attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:numStars="1"
+                            android:rating="1"
+                            android:stepSize="0.1"
+                            android:theme="@style/RatingBar"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/recommended_3_column_second_card2"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_weight="1">
+
+        <!--this used to be shimmer2-->
+        <LinearLayout
+            android:id="@+id/recommended3_shimmer2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:mlns="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="10dp"
+                android:elevation="4dp"
+                android:paddingBottom="5dp"
+                app:cardCornerRadius="10dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="true"
+                mlns:app="http://schemas.android.com/apk/res-auto">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/recommended_card_view_under_image2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                mlns:app="http://schemas.android.com/apk/res-auto">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/recommended_3_column_product_image2"
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/product_image_laptop"
+                    app:sriv_left_bottom_corner_radius="0dp"
+                    app:sriv_left_top_corner_radius="10dp"
+                    app:sriv_right_bottom_corner_radius="0dp"
+                    app:sriv_right_top_corner_radius="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="165dp"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recommended_3_column_product_name2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="32dp"
+                        android:background="@drawable/curved_view_basic"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:text="                             "
+                        android:textColor="#000000"
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/recommended_3_column_cost2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:background="@drawable/curved_view_basic"
+                        android:text="            "
+                        android:textColor="@color/themeColor"
+                        android:textSize="15dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/recommended_3_column_review_count2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="1dp"
+                            android:background="@drawable/curved_view_basic"
+                            android:gravity="center_vertical"
+                            android:text="    "
+                            android:textSize="11dp" />
+
+                        <RatingBar
+                            android:id="@+id/recommended_3_column_rating_bar2"
+                            style="?attr/ratingBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginTop="0dp"
+                            android:numStars="1"
+                            android:rating="1"
+                            android:stepSize="0.1"
+                            android:theme="@style/RatingBar"
+                            android:visibility="gone" />
+
+
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="wrap_content"
+                        android:layout_height="14dp" />
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/recommended_3_column_third_card3"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        android:layout_marginLeft="3dp"
+        android:layout_weight="1">
+
+        <!--this used to be shimmer3-->
+        <LinearLayout
+            android:id="@+id/recommended3_shimmer3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:mlns="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="0dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:paddingBottom="5dp"
+            app:cardCornerRadius="10dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="true"
+            mlns:app="http://schemas.android.com/apk/res-auto">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/recommended_card_view_under_image3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="0dp"
+                app:cardCornerRadius="10dp"
+                android:elevation="0dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="false"
+                mlns:app="http://schemas.android.com/apk/res-auto">
+
+            <com.joooonho.SelectableRoundedImageView
+                android:id="@+id/recommended_3_column_product_image3"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/recommended_mens_shirt"
+                app:sriv_left_bottom_corner_radius="10dp"
+                app:sriv_left_top_corner_radius="10dp"
+                app:sriv_right_bottom_corner_radius="10dp"
+                app:sriv_right_top_corner_radius="10dp" />
+
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="165dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/recommended_3_column_product_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/curved_view_basic"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="                             "
+                    android:textColor="#000000"
+                    android:textSize="12dp" />
+
+
+                <TextView
+                    android:id="@+id/recommended_3_column_cost3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:background="@drawable/curved_view_basic"
+                    android:text="            "
+                    android:textColor="@color/themeColor"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/recommended_3_column_review_count3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginRight="1dp"
+                        android:background="@drawable/curved_view_basic"
+                        android:gravity="center_vertical"
+                        android:text="    "
+                        android:textSize="11dp" />
+
+                    <RatingBar
+                        android:id="@+id/recommended_3_column_rating_bar3"
+                        style="?attr/ratingBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:numStars="1"
+                        android:rating="1"
+                        android:stepSize="0.1"
+                        android:theme="@style/RatingBar"
+                        android:visibility="gone" />
+
+
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="14dp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

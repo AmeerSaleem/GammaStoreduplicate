@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/trend_gradient_theme_final_chrome_intro"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="15dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:mlns="http://schemas.android.com/tools"
+                        android:id="@+id/card_view_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:elevation="5dp"
+                        android:transitionName="card12"
+                        app:cardCornerRadius="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false">
+
+                        <!--android:foreground="@drawable/trend_gradient_white"-->
+
+                            android:background="@drawable/curved_view_brand_image"
+                        <ImageView
+                            android:id="@+id/brand_nike"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:elevation="5dp"
+                            android:scaleType="fitXY"
+                            android:scaleX="1"
+                            android:scaleY="1"
+                            android:background="@drawable/nike_brand"
+                            android:transitionName="nike_transition" />
+                        <!--app:sriv_left_bottom_corner_radius="20dp"-->
+                        <!--app:sriv_left_top_corner_radius="20dp"-->
+                        <!--app:sriv_right_bottom_corner_radius="20dp"-->
+                        <!--app:sriv_right_top_corner_radius="20dp" -->
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:background="@color/transparent"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:elevation="2dp"
+                        android:gravity="center"
+                        android:text="@string/nike_sport_caps"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="#fff"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:mlns="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        mlns:app="http://schemas.android.com/apk/res-auto">
+                        <!--android:foreground="@drawable/trend_gradient_white"-->
+
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/brand_ck"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/ck_brand"
+                            android:transitionName="nike_transition"
+                            app:sriv_left_bottom_corner_radius="20dp"
+                            app:sriv_left_top_corner_radius="20dp"
+                            app:sriv_right_bottom_corner_radius="20dp"
+                            app:sriv_right_top_corner_radius="20dp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:gravity="center"
+                        android:text="@string/calvin_klein_caps"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="#fff"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:mlns="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        mlns:app="http://schemas.android.com/apk/res-auto">
+
+                        <!--android:foreground="@drawable/trend_gradient_white"-->
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/brand_tommy"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/tommyhilfiger_brand"
+                            android:transitionName="nike_transition"
+                            app:sriv_left_bottom_corner_radius="20dp"
+                            app:sriv_left_top_corner_radius="20dp"
+                            app:sriv_right_bottom_corner_radius="20dp"
+                            app:sriv_right_top_corner_radius="20dp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="5dp"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:gravity="center"
+                        android:text="@string/tommy_hilfiger"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="#fff"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:mlns="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        mlns:app="http://schemas.android.com/apk/res-auto">
+
+                        <!--android:foreground="@drawable/trend_gradient_white"-->
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/brand_apple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/apple_building"
+                            android:transitionName="nike_transition"
+                            app:sriv_left_bottom_corner_radius="20dp"
+                            app:sriv_left_top_corner_radius="20dp"
+                            app:sriv_right_bottom_corner_radius="20dp"
+                            app:sriv_right_top_corner_radius="20dp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:gravity="center"
+                        android:text="@string/apple1_tech"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="#fff"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="160dp">
+
+                    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                        xmlns:app="http://schemas.android.com/apk/res-auto"
+                        xmlns:mlns="http://schemas.android.com/tools"
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="10dp"
+                        android:elevation="5dp"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="true"
+                        mlns:app="http://schemas.android.com/apk/res-auto">
+
+                        <!--android:foreground="@drawable/trend_gradient_white"-->
+
+                        <com.joooonho.SelectableRoundedImageView
+                            android:id="@+id/brand_samsung"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/samsung_brand"
+                            android:transitionName="nike_transition"
+                            app:sriv_left_bottom_corner_radius="20dp"
+                            app:sriv_left_top_corner_radius="20dp"
+                            app:sriv_right_bottom_corner_radius="20dp"
+                            app:sriv_right_top_corner_radius="20dp" />
+
+                    </android.support.v7.widget.CardView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentBottom="true"
+                        android:elevation="2dp"
+                        android:fontFamily="@font/ageopersonaluse"
+                        android:gravity="center"
+                        android:text="@string/samsung1_tech"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="#fff"
+                        android:textSize="27dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</ScrollView>

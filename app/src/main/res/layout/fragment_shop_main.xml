@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="#ffffff">
+    <!--android:layout_marginTop="-1000dp"-->
+    <!--android:layout_marginTop="-800dp"-->
+    <!--android:layout_marginLeft="-320dp"-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/trend_gradient_theme_final_chrome_intro">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <!--ViewPager with indicator-->
+                    <FrameLayout
+                        android:id="@+id/frame_viewpager"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/toolbar">
+
+
+                        <android.support.v4.view.ViewPager
+                            android:id="@+id/viewpager"
+                            android:layout_width="match_parent"
+                            android:layout_height="210dp"
+                            android:layout_below="@+id/toolbar"
+                            android:layout_gravity="top"
+                            android:foreground="@drawable/trend_gradient_white" />
+
+                        <View
+                            android:id="@+id/grey_shade"
+                            android:layout_width="match_parent"
+                            android:layout_height="165dp"
+                            android:layout_marginTop="45dp"
+                            android:background="@drawable/trend_gradient_white" />
+
+                        <com.itsronald.widget.ViewPagerIndicator
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="170dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="#00000000"
+                            android:gravity="center_vertical"
+                            app:dotRadius="4.5dp"
+                            app:selectedDotColor="@color/lightThemeColor"
+                            app:unselectedDotColor="@color/themeColor"
+                            app:viewPagerId="@id/viewpager" />
+
+
+                    </FrameLayout>
+
+                    <!--Menu section begins here-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_below="@id/frame_viewpager"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:layout_marginBottom="30dp"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<TextView-->
+                    <!--android:id="@+id/menu_label"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="15dp"-->
+                    <!--android:fontFamily="@font/commanders"-->
+                    <!--android:text="Menu"-->
+                    <!--android:textColor="#000000"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                    <!--&lt;!&ndash;First Row&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--&lt;!&ndash;Menu item camera&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_camera" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Camera"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item Food&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_food"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_food" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Food"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item Phones&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_phones"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_phone" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Phones"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--&lt;!&ndash;Menu item Gaming&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_gaming" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Gaming"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Second Row&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--&lt;!&ndash;Menu item fashion&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_fashion"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_fashion" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Fashion"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item Health&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_health"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_health" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Health"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item Computer&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_computer"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_computer" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Computer"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--&lt;!&ndash;Menu item Equipment&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_equipment"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_equipment2" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Equipment"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Third Row&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_automotive"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="15dp"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--&lt;!&ndash;Menu item automotive&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_automotive" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Automotive"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item Sport&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_sport"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_sport" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Sport"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--&lt;!&ndash;Menu item cinema&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_cinema"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_cinema" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Cinema"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--&lt;!&ndash;Menu item books&ndash;&gt;-->
+                    <!--<LinearLayout-->
+                    <!--android:id="@+id/page_menu_books"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:orientation="vertical">-->
+
+                    <!--<ImageView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="45dp"-->
+                    <!--android:padding="6dp"-->
+                    <!--android:src="@drawable/page_menu_books" />-->
+
+                    <!--<TextView-->
+                    <!--android:layout_width="70dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:gravity="center_horizontal"-->
+                    <!--android:text="Books"-->
+                    <!--android:textColor="#000"-->
+                    <!--android:textSize="10dp" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <!--</LinearLayout>-->
+                    <!--End of menu section-->
+
+                    <!--Start of promotions-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="27dp"
+                        android:background="@android:color/transparent"
+
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:fontFamily="@font/commanders"
+                            android:text="@string/week_promotion"
+                            android:textColor="#000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:id="@+id/horiz_seven_recycler"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="0dp"
+                            android:layout_marginBottom="15dp"
+                            android:orientation="horizontal">
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_promotion"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="8dp"
+                                android:layout_marginTop="19dp"
+                                android:layout_marginRight="7dp"
+                                android:background="@android:color/transparent"
+                                android:orientation="horizontal"
+                                android:theme="@style/RecyclerView" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <!--End of promotions section-->
+
+                    <!--Flash Sale section begins here-->
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="390dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/themecolor"
+                            android:orientation="horizontal">
+
+                            <!--Start of Flash Sale banner-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="25dp"
+                                android:layout_marginRight="15dp"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginTop="100dp"
+                                    android:background="@android:color/transparent"
+                                    android:src="@drawable/icon_flash_sale" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:fontFamily="@font/commanders"
+                                    android:text="@string/flash"
+                                    android:textColor="#ffffff"
+                                    android:textSize="23dp"
+                                    android:textStyle="bold"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/sale"
+                                    android:textColor="#ffffff"
+                                    android:textSize="21dp"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="10dp"
+                                    android:text="@string/sale_ends_in"
+                                    android:textColor="#ffffff"
+                                    android:textSize="17dp"
+
+                                    />
+
+                                <TextView
+                                    android:id="@+id/countdown_time"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="2dp"
+                                    android:text="@string/_23_59_59"
+                                    android:textColor="#ffffff"
+                                    android:textSize="19dp"
+
+                                    />
+
+
+                            </LinearLayout>
+
+                            <android.support.v7.widget.RecyclerView
+                                android:id="@+id/recycler_flash_sale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="8dp" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                    <!--End of Flash Sale-->
+
+                    <!--Start of category section-->
+                    <TextView
+                        android:id="@+id/category_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/commanders"
+                        android:text="@string/categories"
+                        android:textColor="#000000"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:id="@+id/category_section"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal">
+
+                            <!--1st column Men/Women-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/linear_first_image"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="5dp"
+
+                                    android:elevation="7dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto"
+                                    >
+                                <!--<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"-->
+                                    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                                    <!--xmlns:mlns="http://schemas.android.com/tools"-->
+                                    <!--android:id="@+id/product_image_card_phone"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="0dp"-->
+                                    <!--android:layout_marginTop="5dp"-->
+                                    <!--android:layout_marginRight="0dp"-->
+                                    <!--android:layout_marginBottom="5dp"-->
+                                    <!--app:cardCornerRadius="10dp"-->
+                                    <!--app:cardPreventCornerOverlap="false"-->
+                                    <!--app:cardUseCompatPadding="true"-->
+                                    <!--mlns:app="http://schemas.android.com/apk/res-auto">-->
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_image_mens"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:layout_marginTop="0dp"
+                                            android:background="@android:color/transparent"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_men"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+                                        <!--android:elevation="5dp"-->
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+                                        <!--android:elevation="5dp"-->
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/fashion_men"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+                                </android.support.v7.widget.CardView>
+                                <!--Fashion Women  category card-->
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_womens_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    android:paddingRight="0dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    app:contentPaddingRight="0dp"
+                                    mlns:app="http://schemas.android.com/apk/res-auto"
+                                    >
+
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp">
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_womens_pic"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:layout_marginTop="0dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_women"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/fashion_women"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+
+                            <!--2nd column Mobile/Computers-->
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/product_image_card_phone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_image_phones"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_mobile1"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/cell_phones"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+                                </android.support.v7.widget.CardView>
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_computer_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+                                    <!--Fashion Women  category card-->
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_computer_pic"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_computer"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/computers"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+                                </android.support.v7.widget.CardView>
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_sports_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_image_sports1"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_sports"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/sports"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+
+                                </android.support.v7.widget.CardView>
+                                <!--Fashion Women  category card-->
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_kids_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_kids_pic"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_kids"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/fashion_kids"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="32dp"
+                                android:orientation="vertical">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_health"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="5dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true">
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_image_health"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_health"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/health"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+
+                                </android.support.v7.widget.CardView>
+                                <!--Fashion Women  category card-->
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/category_makeup_card"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="10dp"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+
+                                    <FrameLayout
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="0dp">
+
+
+                                        <com.joooonho.SelectableRoundedImageView
+                                            android:id="@+id/category_makeup_pic"
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:layout_marginTop="0dp"
+                                            android:background="@android:color/transparent"
+                                            android:elevation="5dp"
+                                            android:scaleType="centerCrop"
+                                            android:src="@drawable/category_image_makeup"
+                                            app:sriv_left_bottom_corner_radius="10dp"
+                                            app:sriv_left_top_corner_radius="10dp"
+                                            app:sriv_right_bottom_corner_radius="10dp"
+                                            app:sriv_right_top_corner_radius="10dp" />
+
+                                        <View
+                                            android:layout_width="170dp"
+                                            android:layout_height="120dp"
+                                            android:foreground="@drawable/curved_view_grey_tint" />
+
+                                        <TextView
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:elevation="6dp"
+                                            android:fontFamily="@font/strikefighter"
+                                            android:text="@string/makeup"
+                                            android:textColor="#ffffff"
+
+                                            />
+
+                                    </FrameLayout>
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+                    <!--End of category section-->
+
+                    <!--Start of recommended section-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/recommended_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/commanders"
+                            android:text="@string/recommended"
+                            android:textColor="#000000"
+                            android:textSize="14dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:orientation="horizontal"
+                            android:weightSum="4">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/recommended_view_2col"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:elevation="0dp"
+                                    app:cardCornerRadius="7dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+                                    <!--android:backgroundTint="@color/themeColor"-->
+
+                                    <ImageView
+                                        android:id="@+id/ic_2col_view"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_view_2_col_white_24dp" />
+
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/recommended_view_3col"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    android:elevation="0dp"
+                                    app:cardCornerRadius="7dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <ImageView
+                                        android:id="@+id/ic_3col_view"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_view_3_col_black_24dp" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/recommended_view_card"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    app:cardCornerRadius="7dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <ImageView
+                                        android:id="@+id/ic_card_view"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_view_card_black_24dp" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_horizontal">
+
+                                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                                    xmlns:mlns="http://schemas.android.com/tools"
+                                    android:id="@+id/recommended_view_listview"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginLeft="0dp"
+                                    android:layout_marginTop="0dp"
+                                    android:layout_marginRight="0dp"
+                                    android:layout_marginBottom="0dp"
+                                    app:cardCornerRadius="7dp"
+                                    app:cardPreventCornerOverlap="false"
+                                    app:cardUseCompatPadding="true"
+                                    mlns:app="http://schemas.android.com/apk/res-auto">
+
+                                    <ImageView
+                                        android:id="@+id/ic_list_view"
+                                        android:layout_width="24dp"
+                                        android:layout_height="24dp"
+                                        android:layout_gravity="center"
+                                        android:src="@drawable/ic_view_list_black_24dp" />
+                                </android.support.v7.widget.CardView>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/recycler_recommended"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginBottom="6dp"
+                            android:layoutAnimation="@anim/layout_animation_right_to_left" />
+
+                    </LinearLayout>
+                    <!--End of recommended section-->
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>

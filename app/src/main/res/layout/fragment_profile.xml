@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_color"
+    android:fitsSystemWindows="false"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="?attr/actionBarSize"
+        android:background="@drawable/trend_gradient_theme_final_chrome_intro"
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+            <!--android:background="@color/faded_theme"-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+                <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="56dp"-->
+                <!--android:fontFamily="@font/ageopersonaluse"-->
+                <!--android:text="Sara Q"-->
+                <!--android:textColor="#000000"-->
+                <!--android:textSize="21dp"-->
+                <!--android:textStyle="bold" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/curved_view_grey_border"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/notifications_row"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_notification"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/notifications_profile"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/card_details_row_layout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_payment_method1"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/card_details"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="74dp"-->
+                        <!--android:orientation="horizontal">-->
+
+                        <!--<ImageView-->
+                            <!--android:layout_width="35dp"-->
+                            <!--android:layout_height="35dp"-->
+                            <!--android:layout_gravity="center"-->
+                            <!--android:layout_marginLeft="15dp"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:background="@drawable/ic_home_bottom_bar"-->
+
+                            <!--/>-->
+
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="74dp"-->
+                            <!--android:orientation="vertical">-->
+
+
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="70dp"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:fontFamily="@font/ageopersonaluse"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:text="@string/profile_message"-->
+                                <!--android:textColor="#a9a9a9"-->
+                                <!--android:textSize="18dp" />-->
+
+                            <!--<View-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="1dp"-->
+                                <!--android:layout_marginTop="0dp"-->
+                                <!--android:layout_marginRight="15dp"-->
+                                <!--android:background="#d3d3d3" />-->
+
+                        <!--</LinearLayout>-->
+
+                    <!--</LinearLayout>-->
+
+
+                    <LinearLayout
+                        android:id="@+id/orders_row_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_order"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/my_orders"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/language_profile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_language"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/language"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/chat_profile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_chat1"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/chat_with_us"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="0dp"
+                                android:layout_marginRight="15dp"
+                                android:background="#d3d3d3" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/about_app_profile_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="74dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:background="@drawable/ic_about_app_green"
+
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="74dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/ageopersonaluse"
+                                android:gravity="center_vertical"
+                                android:text="@string/profile_about_app"
+                                android:textColor="#a9a9a9"
+                                android:textSize="18dp" />
+
+                            <!--<View-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="1dp"-->
+                            <!--android:layout_marginTop="0dp"-->
+                            <!--android:layout_marginRight="15dp"-->
+                            <!--android:background="#d3d3d3" />-->
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v4.widget.NestedScrollView>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar_layout_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/faded_theme"
+        android:fitsSystemWindows="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@color/faded_theme"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleGravity="left|center_vertical"
+            app:collapsedTitleTextAppearance="@style/CollapsingToolbarTitleCollapsed"
+            app:contentScrim="@color/white_color"
+            app:expandedTitleGravity="center_horizontal|bottom"
+            app:expandedTitleTextAppearance="@style/CollapsingToolbarTitleExpanded"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/collapsing_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/ftc_mosque_karachi"
+                android:src="@drawable/trend_gradient_white_more"
+                android:fitsSystemWindows="true"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="pin"
+                app:layout_collapseParallaxMultiplier="0.6" />
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_for_collapse"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:contentInsetStart="0dp"
+                android:contentInsetLeft="0dp"
+                android:contentInsetEnd="0dp"
+                android:contentInsetRight="0dp"
+                android:fitsSystemWindows="true"
+                android:gravity="center_vertical"
+                app:contentInsetEnd="0dp"
+                app:contentInsetLeft="0dp"
+                app:contentInsetRight="0dp"
+                app:contentInsetStart="0dp"
+                app:contentInsetStartWithNavigation="0dp"
+                app:layout_collapseMode="pin"
+                app:titleMarginEnd="0dp"
+                app:titleMarginStart="-280dp">
+
+
+            </android.support.v7.widget.Toolbar>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout_with_profile_dp_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        app:layout_anchor="@id/collapsing_toolbar_profile"
+        app:layout_anchorGravity="bottom|center">
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+
+
+        <!--app:layout_behavior="com.example.gammastore.ImageBehavior">-->
+        <!--android:layout_gravity="bottom|center_horizontal"-->
+
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/rounded_image_view_profile_image1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/profile_girl"
+            app:finalHeight="@dimen/image_final_width"
+            app:finalYPosition="2dp"
+            android:layout_marginLeft="15dp"
+            app:sriv_border_color="@color/themeColor"
+            app:sriv_border_width="2dp"
+            app:sriv_left_bottom_corner_radius="200dp"
+            app:sriv_left_top_corner_radius="200dp"
+            app:sriv_right_bottom_corner_radius="200dp"
+            app:sriv_right_top_corner_radius="200dp"
+            app:startHeight="2dp"
+            app:startToolbarPosition="2dp"
+            app:startXPosition="2dp" />
+            <!--app:layout_behavior="com.example.gammastore.ImageBehavior"-->
+            <!--app:layout_anchor="@id/collapsing_toolbar_profile"-->
+            <!--app:layout_anchorGravity="bottom|center_horizontal"-->
+
+        <TextView
+            android:id="@+id/profile_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="13.5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="3dp"
+            android:layout_toRightOf="@id/rounded_image_view_profile_image1"
+            android:background="@color/transparent"
+            android:fontFamily="@font/ageopersonaluse"
+            android:text="@string/sara_m"
+            android:textColor="@color/themeColor"
+            android:textSize="21dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/profile_user_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/profile_user_name"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="16dp"
+            android:layout_toRightOf="@id/rounded_image_view_profile_image1"
+            android:background="@color/transparent"
+            android:fontFamily="@font/ageopersonaluse"
+            android:text="@string/e_commerce_shopper"
+            android:textColor="@color/white_color"
+            android:textSize="17dp"
+            android:textStyle="normal" />
+
+    </RelativeLayout>
+
+
+
+</android.support.design.widget.CoordinatorLayout>
