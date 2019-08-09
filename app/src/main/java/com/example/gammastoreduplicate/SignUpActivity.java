@@ -160,4 +160,15 @@ public class SignUpActivity extends AppCompatActivity {
 //        }
 //        return super.dispatchTouchEvent(ev);
 //    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        Intent intent = new Intent(SignUpActivity.this, LoginIntroActivity.class);
+        Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), android.R.anim.fade_in,
+                android.R.anim.fade_out).toBundle();
+        startActivity(intent, bundle);
+        finish();
+    }
 }

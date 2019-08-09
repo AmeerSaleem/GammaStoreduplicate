@@ -87,19 +87,18 @@ public class LoginInputActivity extends AppCompatActivity {
                 }
 
                 progressBar1.setVisibility(View.VISIBLE);
-                mAuth1.signInWithEmailAndPassword(email1,password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                mAuth1.signInWithEmailAndPassword(email1, password1).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         progressBar1.setVisibility(View.GONE);
-                        if(task.isSuccessful()){
+                        if (task.isSuccessful()) {
                             Intent intent = new Intent(LoginInputActivity.this, MainActivity.class);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                             Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), android.R.anim.fade_in,
                                     android.R.anim.fade_out).toBundle();
                             startActivity(intent, bundle);
                             finish();
-                        }
-                        else{
+                        } else {
                             Toast.makeText(LoginInputActivity.this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
                         }
                     }
@@ -129,4 +128,19 @@ public class LoginInputActivity extends AppCompatActivity {
 //            }
 //        }
 //        return super.dispatchTouchEvent( ev );    }
+
+
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        Intent intent = new Intent(LoginInputActivity.this, LoginIntroActivity.class);
+        Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getApplicationContext(), android.R.anim.fade_in,
+                android.R.anim.fade_out).toBundle();
+        startActivity(intent, bundle);
+        finish();
+
+//        R.anim.left_to_right, R.anim.right_to_left
+//        R.anim.slide_left, R.anim.slide_right
+    }
 }
