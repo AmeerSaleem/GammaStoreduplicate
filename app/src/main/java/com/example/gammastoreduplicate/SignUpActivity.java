@@ -82,9 +82,8 @@ public class SignUpActivity extends AppCompatActivity {
         });
 
         Glide.with(this)
-                .load("https://images.pexels.com/photos/1368690/pexels-photo-1368690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+                .load(getResources().getDrawable(R.drawable.pexels_photo_1368690_small))
                 .into(wallpaper);
-
     }
 
     private void registerUser() {
@@ -160,7 +159,6 @@ public class SignUpActivity extends AppCompatActivity {
 //        }
 //        return super.dispatchTouchEvent(ev);
 //    }
-
 
     @Override
     public void onBackPressed() {

@@ -34,7 +34,6 @@ public class MyPromoAdapter extends RecyclerView.Adapter<MyPromoAdapter.PromoIte
 
     }
 
-
     public void setOnClickListener(onItemClickListener listener) {
         mListener = listener;
     }

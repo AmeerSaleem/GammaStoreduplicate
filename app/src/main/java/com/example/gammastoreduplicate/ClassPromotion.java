@@ -16,4 +16,6 @@ public class ClassPromotion {
         this.text = text;
         discount = "0";
     }
+
+
 }

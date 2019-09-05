@@ -109,7 +109,7 @@ public class LoginInputActivity extends AppCompatActivity {
 
         Glide
                 .with(this)
-                .load("https://images.pexels.com/photos/264554/pexels-photo-264554.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940")
+                .load(getResources().getDrawable(R.drawable.pexels_photo_264554_small))
                 .into(wallpaper);
     }
 

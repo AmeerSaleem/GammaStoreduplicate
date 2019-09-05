@@ -1,6 +1,7 @@
 package com.example.gammastoreduplicate;
 
 import android.content.Context;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.NonNull;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
@@ -15,9 +16,9 @@ import java.util.ArrayList;
 public class ViewPagerStringAdapter extends PagerAdapter {
 
     Context context;
-    ArrayList<String> slide_images;
+    ArrayList<Drawable> slide_images;
 
-    public ViewPagerStringAdapter(Context context, ArrayList<String> slide_images) {
+    public ViewPagerStringAdapter(Context context, ArrayList<Drawable> slide_images) {
         this.context = context;
         this.slide_images = slide_images;
     }
@@ -43,7 +44,6 @@ public class ViewPagerStringAdapter extends PagerAdapter {
                 .with(context)
                 .load(slide_images.get(position))
                 .into(imageView);
-
         ((ViewPager)container).addView(imageView,0);
         return imageView;
     }

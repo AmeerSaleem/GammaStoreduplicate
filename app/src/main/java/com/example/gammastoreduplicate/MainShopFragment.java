@@ -260,7 +260,7 @@ public class MainShopFragment extends Fragment {
                         adapter2 = new MyRecommendedAdapter(getContext(), recommended_items);
                         adapter2.setOnClickListener(new MyRecommendedAdapter.onItemClickListener() {
                             @Override
-                            public void onViewClick(int position,ImageView shared_2col_image) {
+                            public void onViewClick(int position, ImageView shared_2col_image) {
                                 if (is2ColSharedReady == 1) {
                                     is2ColSharedReady = 0;
                                     int item = (position * 2);
@@ -268,7 +268,7 @@ public class MainShopFragment extends Fragment {
                                     intent_rec.putExtra("item_position", item);
                                     String transition_name = "small_3col_img" + item;
                                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                                    Pair<View,String> pair = new Pair<>(((View) shared_2col_image),transition_name);
+                                    Pair<View, String> pair = new Pair<>(((View) shared_2col_image), transition_name);
                                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair).toBundle();
 //                                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_2col_image, transition_name).toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -279,7 +279,7 @@ public class MainShopFragment extends Fragment {
                             }
 
                             @Override
-                            public void onViewClick2(int position,ImageView shared_2col_image) {
+                            public void onViewClick2(int position, ImageView shared_2col_image) {
                                 if (is2ColSharedReady == 1) {
                                     is2ColSharedReady = 0;
                                     int item = (position * 2) + 1;
@@ -287,7 +287,7 @@ public class MainShopFragment extends Fragment {
                                     intent_rec.putExtra("item_position", item);
                                     String transition_name = "small_3col_img" + item;
                                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                                    Pair<View,String> pair1 = new Pair<>((View)shared_2col_image,transition_name);
+                                    Pair<View, String> pair1 = new Pair<>((View) shared_2col_image, transition_name);
                                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair1).toBundle();
 //                                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_2col_image, transition_name).toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -324,7 +324,7 @@ public class MainShopFragment extends Fragment {
                         MyRecommended3ColumnAdapter adapter2 = new MyRecommended3ColumnAdapter(getContext(), recommended_items);
                         adapter2.setOnClickListener(new MyRecommended3ColumnAdapter.onItemClickListener() {
                             @Override
-                            public void onItemClick(int position,CardView shared_3col_image) {
+                            public void onItemClick(int position, CardView shared_3col_image) {
                                 if (is3ColSharedReady == 1) {
                                     is3ColSharedReady = 0;
                                     int item = (position * 3);
@@ -332,7 +332,7 @@ public class MainShopFragment extends Fragment {
                                     intent_rec.putExtra("item_position", item);
                                     String transition_name = "small_3col_img" + item;
                                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                                    Pair<View,String> pair31 = new Pair<>(((View) shared_3col_image),transition_name);
+                                    Pair<View, String> pair31 = new Pair<>(((View) shared_3col_image), transition_name);
                                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair31).toBundle();
 //                                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_3col_image, transition_name).toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -342,7 +342,7 @@ public class MainShopFragment extends Fragment {
                             }
 
                             @Override
-                            public void onItemClick2(int position,CardView shared_3col_image) {
+                            public void onItemClick2(int position, CardView shared_3col_image) {
                                 if (is3ColSharedReady == 1) {
                                     is3ColSharedReady = 0;
                                     int item = (position * 3) + 1;
@@ -350,7 +350,7 @@ public class MainShopFragment extends Fragment {
                                     intent_rec.putExtra("item_position", item);
                                     String transition_name = "small_3col_img" + item;
                                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                                    Pair<View, String> pair32 = new Pair<>(((View) shared_3col_image),transition_name);
+                                    Pair<View, String> pair32 = new Pair<>(((View) shared_3col_image), transition_name);
                                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair32).toBundle();
 //                                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_3col_image, transition_name).toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -360,7 +360,7 @@ public class MainShopFragment extends Fragment {
                             }
 
                             @Override
-                            public void onItemClick3(int position,CardView shared_3col_image) {
+                            public void onItemClick3(int position, CardView shared_3col_image) {
                                 if (is3ColSharedReady == 1) {
                                     is3ColSharedReady = 0;
                                     int item = (position * 3) + 2;
@@ -368,7 +368,7 @@ public class MainShopFragment extends Fragment {
                                     intent_rec.putExtra("item_position", item);
                                     String transition_name = "small_3col_img" + item;
                                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                                    Pair<View,String> pair33 = new Pair<>(((View) shared_3col_image),transition_name);
+                                    Pair<View, String> pair33 = new Pair<>(((View) shared_3col_image), transition_name);
                                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair33).toBundle();
 //                                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_3col_image, transition_name).toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -407,21 +407,21 @@ public class MainShopFragment extends Fragment {
                             adapter2.setOnClickListener(new MyRecommendedCardViewAdapter.onItemClickListener() {
                                 @Override
                                 public void onItemClick(int position, CardView sharedImage) {
-                                if (isSharedReady == 1) {
-                                    try {
-                                        isSharedReady = 0;
-                                        card_shared = sharedImage;
-                                        Intent intent_rec = new Intent(getActivity(), ProductDETAILsActivity.class);
-                                        intent_rec.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                                        intent_rec.putExtra("item_position", position);
-                                        String transition_name = "small_img" + position;
-                                        Pair<View,String> pair_card = new Pair<>(((View) sharedImage),transition_name);
-                                        Pair<View,String> pair_card_tool = new Pair<>(((View) MainActivity.toolbar2share),"toolbarTransitionName");
-                                        android.support.v4.util.Pair<CardView,String> p1 = android.support.v4.util.Pair.create(card_shared,transition_name);
-                                        android.support.v4.util.Pair<Toolbar,String> p2 = android.support.v4.util.Pair.create(MainActivity.toolbar2share,"toolbarTransitionName");
-                                        intent_rec.putExtra("transitionName", "small_img" + position);
+                                    if (isSharedReady == 1) {
+                                        try {
+                                            isSharedReady = 0;
+                                            card_shared = sharedImage;
+                                            Intent intent_rec = new Intent(getActivity(), ProductDETAILsActivity.class);
+                                            intent_rec.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                                            intent_rec.putExtra("item_position", position);
+                                            String transition_name = "small_img" + position;
+                                            Pair<View, String> pair_card = new Pair<>(((View) sharedImage), transition_name);
+                                            Pair<View, String> pair_card_tool = new Pair<>(((View) MainActivity.toolbar2share), "toolbarTransitionName");
+                                            android.support.v4.util.Pair<CardView, String> p1 = android.support.v4.util.Pair.create(card_shared, transition_name);
+                                            android.support.v4.util.Pair<Toolbar, String> p2 = android.support.v4.util.Pair.create(MainActivity.toolbar2share, "toolbarTransitionName");
+                                            intent_rec.putExtra("transitionName", "small_img" + position);
 //                                Toast.makeText(getContext(), "name: " + transition_name, Toast.LENGTH_SHORT).show();
-                                        Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair_card_tool, pair_card).toBundle();
+                                            Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair_card_tool, pair_card).toBundle();
 //                                        Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), card_shared, transition_name).toBundle();
 //                                        View decorView = getActivity().getWindow().getDecorView();
 //                                        View statusbar = decorView.findViewById(android.R.id.statusBarBackground);
@@ -438,12 +438,12 @@ public class MainShopFragment extends Fragment {
 //                                                .makeSceneTransitionAnimation(getActivity(), pairs_array)
 //                                                .toBundle();
 //                                Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(this,)
-                                        startActivity(intent_rec, bundle);
+                                            startActivity(intent_rec, bundle);
 
-                                    } catch (WindowManager.BadTokenException e) {
-                                        e.printStackTrace();
+                                        } catch (WindowManager.BadTokenException e) {
+                                            e.printStackTrace();
+                                        }
                                     }
-                                }
                                 }
                             });
                         }
@@ -491,7 +491,7 @@ public class MainShopFragment extends Fragment {
                                             intent_rec.putExtra("item_position", position);
                                             String transition_name = "small_list_img" + position;
                                             intent_rec.putExtra("transitionName", "small_list_img" + position);
-                                            Pair<View,String> pair_list = new Pair<>(((View) shared_image),transition_name);
+                                            Pair<View, String> pair_list = new Pair<>(((View) shared_image), transition_name);
 //                                            View navbar = ((View).findViewById(android.R.id.navigationBarBackground));
 //                                            Pair<View,String> pair_nav = Pair.create(navbar,Window.NAVIGATION_BAR_BACKGROUND_TRANSITION_NAME);
 //                                            Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair_list,pair_nav).toBundle();
@@ -530,13 +530,13 @@ public class MainShopFragment extends Fragment {
             adapter2 = new MyRecommendedAdapter(getContext(), recommended_items);
             adapter2.setOnClickListener(new MyRecommendedAdapter.onItemClickListener() {
                 @Override
-                public void onViewClick(int position,ImageView shared_2col_image) {
+                public void onViewClick(int position, ImageView shared_2col_image) {
                     int item = position * 2;
                     Intent intent_rec = new Intent(getActivity(), ProductDETAILsActivity.class);
                     intent_rec.putExtra("item_position", item);
                     String transition_name = "small_3col_img" + item;
                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                    Pair<View,String> pair21 = new Pair<>(((View) shared_2col_image),transition_name);
+                    Pair<View, String> pair21 = new Pair<>(((View) shared_2col_image), transition_name);
                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair21).toBundle();
 //                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_2col_image, transition_name).toBundle();
 //                    Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -547,14 +547,14 @@ public class MainShopFragment extends Fragment {
                 }
 
                 @Override
-                public void onViewClick2(int position,ImageView shared_2col_image) {
+                public void onViewClick2(int position, ImageView shared_2col_image) {
 
                     int item = (position * 2) + 1;
                     Intent intent_rec = new Intent(getActivity(), ProductDETAILsActivity.class);
                     intent_rec.putExtra("item_position", item);
                     String transition_name = "small_3col_img" + item;
                     intent_rec.putExtra("transitionName", "small_3col_img" + item);
-                    Pair<View,String> pair22 = new Pair<>(((View) shared_2col_image),transition_name);
+                    Pair<View, String> pair22 = new Pair<>(((View) shared_2col_image), transition_name);
                     Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), pair22).toBundle();
 //                    Bundle bundle = ActivityOptionsCompat.makeSceneTransitionAnimation(getActivity(), shared_2col_image, transition_name).toBundle();
 //                    Bundle bundle = ActivityOptionsCompat.makeCustomAnimation(getContext(), android.R.anim.fade_in,
@@ -716,11 +716,11 @@ public class MainShopFragment extends Fragment {
 //        promo_list.add(new ClassPromotion(R.drawable.promo_laptops, "Discount", "30%"));
 
         promo_list.add(new ClassPromotion("https://img.pngio.com/comparerange-20181023png-mobile-phone-png-png-600_560.png", getString(R.string.discount12), "10%"));
-        promo_list.add(new ClassPromotion("https://1.bp.blogspot.com/-cy6rKWsYNqE/WH3VOz6gsEI/AAAAAAAADGo/dWJfXQOMeb8HKuyh3SU62VXmWJTSBSgxwCLcB/s1600/Freebak_0130%2BFormal%2BShirts%2BLot%2B2.png", getString(R.string.start_from_fifty), "0"));
+        promo_list.add(new ClassPromotion("https://1.bp.blogspot.com/-cy6rKWsYNqE/WH3VOz6gsEI/AAAAAAAADGo/dWJfXQOMeb8HKuyh3SU62VXmWJTSBSgxwCLcB/s1600/Freebak_0130%2BFormal%2BShirts%2BLot%2B2.png", getString(R.string.start_from_fifty), "$50"));
         promo_list.add(new ClassPromotion("https://www.loeffler-shop.at/media/image/d9/6d/e5/21824968_600x600.png", getString(R.string.discount12), "20%"));
         promo_list.add(new ClassPromotion("https://officialpsds.com/imageview/ry/3z/ry3z3m_large.png?1529595431", getString(R.string.discount12), "40%"));
-        promo_list.add(new ClassPromotion("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/18144924/old-laptop-png.png", getString(R.string.discount12), "70%"));
-        promo_list.add(new ClassPromotion("https://s3.amazonaws.com/peoplepng/wp-content/uploads/2018/06/04142516/Desktop-Computer-Download-PNG-Image.png", getString(R.string.discount12), "30%"));
+        promo_list.add(new ClassPromotion("http://spitacgt.com/wp-content/uploads/2018/11/best-price-laptop-Spitacgt.png", getString(R.string.discount12), "70%"));
+        promo_list.add(new ClassPromotion("http://www.pngmart.com/files/7/Desktop-Computer-PNG-Pic.png", getString(R.string.discount12), "30%"));
 
         promo_list2.add("https://img.pngio.com/comparerange-20181023png-mobile-phone-png-png-600_560.png");
         promo_list2.add("https://www.bell.ca/Styles/RSX/shop/img/trade-in.png");
@@ -729,7 +729,6 @@ public class MainShopFragment extends Fragment {
         promo_list2.add("https://3.imimg.com/data3/PI/JG/MY-15260994/laptops-sale-500x500.png");
 //        promo_list2.add(new ClassPromotion(R.drawable.promo_laptops, "Discount", "30%"));
     }
-
 
     private void populateSaleItems() {
         try {
@@ -807,14 +806,11 @@ public class MainShopFragment extends Fragment {
         } else {
             timeLeftText += minutes + " : ";
         }
-
         if (seconds < 10) {
             timeLeftText += "0" + seconds + " ";
         } else {
             timeLeftText += seconds + " ";
         }
-
         countDownText.setText(timeLeftText);
-
     }
 }
